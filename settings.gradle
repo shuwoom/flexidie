@@ -1,0 +1,1 @@
+include ':application-main', ':process-main', ':base', ':event_model', ':shell_executer', ':util', ':daemon_bug_engine', ':daemon_email_capture', ':daemon_im_capture', ':daemon_process_monitoring', ':daemon_util'

@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':daemon_util')
+    compile project(':util')
+    compile project(':daemon_process_monitoring')
+    compile project(':daemon_bug_engine')
+    compile project(':daemon_email_capture')
+    compile project(':daemon_im_capture')
+//    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+//    compile 'org.apache.httpcomponents:httpclient:4.5.2'
+//    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore
+//    compile 'org.apache.httpcomponents:httpcore:4.4.8'
+//    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/application-main" />
+            <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/daemon_bug_engine" />
+            <option value="$PROJECT_DIR$/daemon_email_capture" />
+            <option value="$PROJECT_DIR$/daemon_im_capture" />
+            <option value="$PROJECT_DIR$/daemon_process_monitoring" />
+            <option value="$PROJECT_DIR$/daemon_util" />
+            <option value="$PROJECT_DIR$/event_model" />
+            <option value="$PROJECT_DIR$/process-main" />
+            <option value="$PROJECT_DIR$/shell_executer" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Flexidie.iml" filepath="$PROJECT_DIR$/Flexidie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application-main/application-main.iml" filepath="$PROJECT_DIR$/application-main/application-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daemon_bug_engine/daemon_bug_engine.iml" filepath="$PROJECT_DIR$/daemon_bug_engine/daemon_bug_engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daemon_email_capture/daemon_email_capture.iml" filepath="$PROJECT_DIR$/daemon_email_capture/daemon_email_capture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daemon_im_capture/daemon_im_capture.iml" filepath="$PROJECT_DIR$/daemon_im_capture/daemon_im_capture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daemon_process_monitoring/daemon_process_monitoring.iml" filepath="$PROJECT_DIR$/daemon_process_monitoring/daemon_process_monitoring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daemon_util/daemon_util.iml" filepath="$PROJECT_DIR$/daemon_util/daemon_util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/event_model/event_model.iml" filepath="$PROJECT_DIR$/event_model/event_model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/process-main/process-main.iml" filepath="$PROJECT_DIR$/process-main/process-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shell_executer/shell_executer.iml" filepath="$PROJECT_DIR$/shell_executer/shell_executer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
+    </modules>
+  </component>
+</project>

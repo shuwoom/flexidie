@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.fx"
+        minSdkVersion 7
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':daemon_util')
+    compile project(':process-main')
+    compile project(':base')
+    compile project(':util')
+}
+
+
+task signAPK(type: Exec, dependsOn: 'assembleRelease') {
+    def java.lang.String keyPath = "./../sign/androidM_signed"
+    def java.lang.String appPath = "."
+    def moduleName = this.name;
+    commandLine keyPath + '/signAPK.sh' , keyPath , appPath , moduleName
+    standardOutput = new ByteArrayOutputStream()
+    println standardOutput
+}
+
+task signBspAPK(type: Exec, dependsOn: 'assembleRelease') {
+    def java.lang.String keyPath = "./../sign/androidM_bsp_signed"
+    def java.lang.String appPath = "."
+    def moduleName = this.name;
+    commandLine keyPath + '/signAPK.sh' , keyPath , appPath , moduleName
+    standardOutput = new ByteArrayOutputStream()
+    println standardOutput
+}
+
+task sD(type: Exec, dependsOn: 'assembleDebug') {
+    def java.lang.String keyPath = "./../sign/androidM_signed"
+    def java.lang.String appPath = "."
+    def moduleName = this.name;
+    commandLine keyPath + '/signAPK_debug.sh' , keyPath , appPath , moduleName
+    standardOutput = new ByteArrayOutputStream()
+    println standardOutput
+}
